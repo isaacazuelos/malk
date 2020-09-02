@@ -30,7 +30,7 @@ If it works, you can find the binary at `./target/avr-atmega32u4/release/malk.el
 
 You can then flash it to your Pro Micro. I have a regular knock off, so the `avrdude-flash.sh` script helps automate finding the device.
 
-In my experience, flashing fails more than it succeeds. This may be made worse by USB 3 ports according to folk wisdom. Just reset the Pro Micro (by bridging reset to ground) twice in quick succession to force it into the bootloader for 8 seconds. This procedure is necessary and surprisingly hard to find.
+In my experience, flashing fails often. Don't forget to add yoruself to the `dialout` group on Linux. Some of the flakiness may be made worse by USB 3 ports according to folk wisdom. Just reset the Pro Micro (by bridging reset to ground) twice in quick succession to force it into the bootloader for 8 seconds. This procedure is necessary and surprisingly hard to find.
 
 ## Resources
 
