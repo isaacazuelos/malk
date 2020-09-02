@@ -52,6 +52,8 @@ And of course reading the [manual].
 
 The specific `avrdude-flash.sh` script is from [Nooges' gist][gist] and I have no idea what license it would fall under.
 
+[gist]: https://gist.github.com/nooges/93560cb0c456ade5b530e95892b5e25b
+
 Other than than, this project is under the [MIT][] license.
 
 [MIT]: https://choosealicense.com/licenses/mit
