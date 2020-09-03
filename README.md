@@ -10,9 +10,8 @@ To be clear, I have no idea what I'm doing. If this bricks anything, it's your f
 
 ## What it does
 
-Right now, it does nothing. This is a placeholder for the first real code commit.
-
-This version does "work" in that you can flash a program that just loops and does nothing. Or at least it looks like it's doing nothing.
+Right now, it blinks RX LED. This was just to make sure I could correctly
+interpret the manual and read or write to the correct registers.
 
 ## How to set it up
 
@@ -30,7 +29,12 @@ If it works, you can find the binary at `./target/avr-atmega32u4/release/malk.el
 
 You can then flash it to your Pro Micro. I have a regular knock off, so the `avrdude-flash.sh` script helps automate finding the device.
 
-In my experience, flashing fails more than it succeeds. This may be made worse by USB 3 ports according to folk wisdom. Just reset the Pro Micro (by bridging reset to ground) twice in quick succession to force it into the bootloader for 8 seconds. This procedure is necessary and surprisingly hard to find.
+In my experience, flashing failed more than it succeeded at first. Here are some things to try if you're having issues:
+
+1. Some issues may be made worse by USB 3 ports according to folk wisdom.
+2. Make sure your user is in the `dialout` group.
+3. Reset the Pro Micro (by bridging reset to ground) twice in quick succession
+   to force it into the bootloader for 8 seconds.
 
 ## Resources
 
@@ -43,6 +47,10 @@ The [avr-rust/blink][blink] repo has a lot of good info on getting things set up
 [blink]: https://github.com/avr-rust/blink
 
 Also reading QMK's `shell.nix` helped me find some of the nixpkgs names of packages.
+
+There's a great diagram of the board's pinout (crucially with what port the pins belong two) available on the [QQTrading product page][pinout].
+
+[pinout]: http://qqtrading.com.my/arduino-pro-micro-atmega32u4-development-board
 
 And of course reading the [manual].
 
