@@ -1,6 +1,6 @@
 # Malk
 
-> Now with vitamin R!
+![Now with vitamin R](http://static1.wikia.nocookie.net/__cb20130325185942/simpsons/images/3/3c/Malk.jpg)
 
 I bought a [2% Milk][milk] macro board as a way to play with embedded rust.
 
@@ -59,6 +59,8 @@ And of course reading the [manual].
 ## License
 
 The specific `avrdude-flash.sh` script is from [Nooges' gist][gist] and I have no idea what license it would fall under.
+
+[gist]: https://gist.github.com/nooges/93560cb0c456ade5b530e95892b5e25b
 
 Other than than, this project is under the [MIT][] license.
 
