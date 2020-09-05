@@ -30,7 +30,7 @@ pub extern fn main() {
     // We set it as output by setting the "Data Direction" bit for the pin. This
     // means setting the DD_xn_ bit in the DDR_x_ register, where _x_ is the
     // port's letter, and _n_ is the pin's number in it's port. Setting it to 1
-    // means output, 0 is output.
+    // means output, 0 is input.
 
     // We're going to just set the whole port as output.
     unsafe { *DDR_B = 0xFF };
