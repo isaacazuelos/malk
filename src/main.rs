@@ -19,8 +19,8 @@ fn panic(_info: &PanicInfo) -> ! {
 }
 
 // These constants can be found in the ATmega32u4 datasheet.
-const DDR_B: *mut u8 = 0x05 as _;
-const PORT_B: *mut u8 = 0x24 as _;
+const DDR_B: *mut u8 = 0x24 as _;
+const PORT_B: *mut u8 = 0x25 as _;
 
 #[no_mangle]
 pub extern fn main() {
