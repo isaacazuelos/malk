@@ -10,8 +10,9 @@ To be clear, I have no idea what I'm doing. If this bricks anything, it's your f
 
 ## What it does
 
-Right now, it blinks RX LED. This was just to make sure I could correctly
-interpret the manual and read or write to the correct registers.
+Right now, it blinks RX LED. When the top button on the Milk is pressed the light stays on. When the bottom button is pressed, it stays off. If both are pressed, it stays off.
+
+This was just to make sure I could correctly interpret the manual and read or write to the correct registers, and could use the GPIO pins.
 
 ## How to set it up
 
@@ -51,6 +52,10 @@ Also reading QMK's `shell.nix` helped me find some of the nixpkgs names of packa
 There's a great diagram of the board's pinout (crucially with what port the pins belong two) available on the [QQTrading product page][pinout].
 
 [pinout]: http://qqtrading.com.my/arduino-pro-micro-atmega32u4-development-board
+
+This [pull up resistor tutorial][bald] was also helpful. If you're trying this I recommend building with it off so you can see what floating does too.
+
+[bald]: https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html
 
 And of course reading the [manual].
 
